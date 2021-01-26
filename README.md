@@ -1,48 +1,40 @@
-# aws-translate
+# AWS Translate API
+Simple code with Node JS using AWS Translate API
 
-## Table of Contents
+## Getting Started
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
+rename .env-sample to .env
+
+set environment variables
+
+APP_PORT=your-port
+AWS_ACCESS_KEY_ID=you-access-key
+AWS_SECRET_ACCESS_KEY=your-secret-access-key
+AWS_DEFAULT_REGION=region-choosen
+
+To see how to get these keys above, visit https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/
+
+
+Then:
+
+```
+git clone https://github.com/jocbarbosa/aws-translate.git
+
+cd aws-translate
+
+docker-compose up
+```
+
+
+## Example
+```
+{
+    "sourceLanguage": "en",
+    "targetLanguage": "pt",
+    "text": "Whether you grew up reading Batman comics, watched the campy television show, or eagerly await each new movie, this is the book for you."
+}
+```
 
 ## Supported languages
 
 To see supported languages, visit https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages
-
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## Usage <a name = "usage"></a>
-
-Add notes about how to use the system.
