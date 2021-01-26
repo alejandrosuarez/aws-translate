@@ -4,9 +4,9 @@ const aws = require('aws-sdk');
 const translate = new aws.Translate({ region: 'us-west-1' });
 
 
-routes.get('/translate', (req, res) => {
+routes.post('/translate', (req, res) => {
 
-    const { SourceLanguageCode = 'pt', TargetLanguageCode = 'en', Text } = req.query;
+    const { sourceLanguage: SourceLanguageCode, targetLanguage: TargetLanguageCode, text: Text } = req.body;
 
     const params = {
         SourceLanguageCode,
@@ -17,6 +17,7 @@ routes.get('/translate', (req, res) => {
     try {
 
         translate.translateText(params, (err, data) => {
+
             if (err) {
                 return res.status(500).json(err);
             }
