@@ -1,4 +1,5 @@
 # AWS Translate API
+<img src="https://raw.githubusercontent.com/jocbarbosa/aws-translate/master/.github/aws.png" alt="drawing" width="200"/>
 Simple code with Node JS using AWS Translate API
 
 ## Getting Started
