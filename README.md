@@ -9,8 +9,11 @@ rename .env-sample to .env
 set environment variables
 
 APP_PORT=your-port
+
 AWS_ACCESS_KEY_ID=you-access-key
+
 AWS_SECRET_ACCESS_KEY=your-secret-access-key
+
 AWS_DEFAULT_REGION=region-choosen
 
 To see how to get these keys above, visit https://aws.amazon.com/blogs/security/wheres-my-secret-access-key/
