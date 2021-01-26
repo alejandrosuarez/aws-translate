@@ -26,7 +26,7 @@ docker-compose up
 ```
 
 
-## Example
+### Example request
 ```
 {
     "sourceLanguage": "en",
@@ -35,6 +35,15 @@ docker-compose up
 }
 ```
 
-## Supported languages
+### Example response
+```
+{
+    "TranslatedText": "Se você cresceu lendo quadrinhos Batman, assistiu ao programa de televisão, ou aguardar ansiosamente cada novo filme, este é o livro para você.",
+    "SourceLanguageCode": "en",
+    "TargetLanguageCode": "pt"
+}
+```
+
+### Supported languages
 
 To see supported languages, visit https://docs.aws.amazon.com/translate/latest/dg/what-is.html#what-is-languages
