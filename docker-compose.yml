@@ -1,0 +1,13 @@
+version: '3'
+services: 
+  node:
+    build: .
+    image: jocbarbosa/web_node
+    container_name: web_node
+    ports: 
+    - "3000:3000"
+    networks: 
+      - local
+networks: 
+  local:
+    driver: bridge
