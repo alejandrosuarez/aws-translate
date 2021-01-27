@@ -33,9 +33,9 @@ docker-compose up
 ### Example request
 ```
 {
-    "sourceLanguage": "en",
-    "targetLanguage": "pt",
-    "text": "Whether you grew up reading Batman comics, watched the campy television show, or eagerly await each new movie, this is the book for you."
+    "SourceLanguageCode": "en",
+    "TargetLanguageCode": "pt",
+    "Text": "Whether you grew up reading Batman comics, watched the campy television show, or eagerly await each new movie, this is the book for you."
 }
 ```
 
